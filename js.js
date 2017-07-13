@@ -5,13 +5,7 @@ let button = document.querySelector('button');
 button.addEventListener('click', whatIsBiggest);
 
 function whatIsBiggest(){
-    if(inp1.value > inp2.value){
-        alert('Максимальное значение: ' + inp1.value);
-    }
-    else if(inp1.value < inp2.value){
-        alert('Максимальное значение: ' + inp2.value);
-    }
-    else if(inp1.value === inp2.value){
-        alert('Числа равны');
-    }
+    let result = Math.max(inp1.value, inp2.value);
+    alert('Максимальное число: ' + result );
+
 }
